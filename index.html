@@ -48,9 +48,9 @@
             <a class="button button-secondary" href="mailto:support@myhealthnr.com?subject=My%20Health%3A%20NR%20question">Ask a question</a>
           </div>
           <div class="trust-row" aria-label="Product principles">
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.7 2.8 8.8 7 10 4.2-1.2 7-5.3 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg>Stored on your device</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3"/><rect x="5" y="11" width="14" height="10" rx="2"/></svg>No app account</span>
-            <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>No ads or tracking</span>
+            <span class="trust-item"><span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5.5" y="2.5" width="13" height="19" rx="3"/><path d="M9 18.5h6"/><rect x="9" y="9.5" width="8" height="6.5" rx="1.5"/><path d="M11 9.5V8a2 2 0 0 1 4 0v1.5"/></svg></span>Stored on your device</span>
+            <span class="trust-item"><span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="7.5" r="3.5"/><path d="M3.5 19c.8-4 3-6 6.5-6 2 0 3.6.7 4.7 2"/><path d="m4 4 16 16"/></svg></span>No app account</span>
+            <span class="trust-item"><span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12s3.5-5.5 9-5.5c2.2 0 4.1.8 5.6 1.8M21 12s-3.5 5.5-9 5.5c-2.2 0-4.1-.8-5.6-1.8"/><circle cx="12" cy="12" r="2.5"/><path d="M4 4l16 16"/></svg></span>No ads or tracking</span>
           </div>
         </div>
 
@@ -124,12 +124,28 @@
           <p class="problem-answer">My Health: NR gives you one calm place to organize the picture.</p>
         </div>
       </div>
-      <div class="shell device-flow" aria-label="Separate health sources brought into one organized view">
-        <div class="source-card"><span class="source-icon">♥</span><div><strong>Blood pressure</strong><small>Home monitor</small></div></div>
-        <div class="source-card"><span class="source-icon">◆</span><div><strong>Glucose</strong><small>Glucose meter</small></div></div>
-        <div class="source-card"><span class="source-icon">↔</span><div><strong>Weight</strong><small>Home scale</small></div></div>
-        <div class="flow-arrow" aria-hidden="true"><span></span><b>→</b></div>
-        <div class="destination-card"><img src="assets/icon.png" alt="" width="64" height="64"><div><strong>One organized view</strong><small>Readings, trends, medications, reminders &amp; journal</small></div></div>
+      <div class="shell device-story">
+        <figure class="device-photo-card">
+          <div class="device-photo-frame">
+            <img src="assets/myhealthnr-connected-devices.png" width="1536" height="1024" alt="Blood pressure monitor and cuff, glucose meter, and scale arranged around a phone showing the My Health: NR app">
+            <div class="device-phone-ui" aria-hidden="true">
+              <div class="device-app-top"><img src="assets/icon.png" alt=""><span>My Health: NR</span><b>D</b></div>
+              <div class="device-demo-label">FICTIONAL DEMO DATA</div>
+              <div class="device-actions"><span>＋ Add Reading</span><span>◈ One-time dose</span></div>
+              <div class="device-section-title"><strong>Today's readings</strong><small>Latest entries</small></div>
+              <div class="device-reading-grid">
+                <div><small>Blood Pressure</small><strong>118/76</strong><em>mmHg</em></div>
+                <div><small>Glucose</small><strong>104</strong><em>mg/dL</em></div>
+              </div>
+              <div class="device-weight-card"><span><small>Weight trend</small><strong>168.4 <em>lb</em></strong></span><i><b></b><b></b><b></b><b></b><b></b></i></div>
+              <div class="device-agenda"><strong>Today's agenda</strong><span><i></i>Daily supplement <small>8:00 PM</small></span><span><i></i>Blood pressure check <small>5:30 PM</small></span></div>
+            </div>
+          </div>
+          <figcaption class="device-photo-caption">
+            <span class="device-caption-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7.5 16 16l-4 4V4l4 4-8 8"/><path d="M5 8.5 12 16M5 15.5 12 8"/></svg></span>
+            <span><strong>One organized view</strong><small>The phone screen uses fictional example data. Bring readings together from compatible Bluetooth devices or enter them manually. Compatibility depends on the device model and protocol.</small></span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -147,42 +163,54 @@
               <h3>Readings &amp; trends</h3>
               <p>Record common home measurements and review how they change over time. Supported Bluetooth devices can make entry easier; compatibility depends on the model and protocol.</p>
             </div>
-            <div class="trend-demo" aria-label="Illustrative trend chart using sample data">
-              <div class="trend-top"><span>Blood pressure</span><span class="sample-pill">SAMPLE DATA</span></div>
-              <div class="trend-values"><strong>118/76</strong><small>Latest reading · mmHg</small></div>
-              <svg aria-hidden="true" viewBox="0 0 420 135" preserveAspectRatio="none"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12bfc2" stop-opacity=".28"/><stop offset="1" stop-color="#12bfc2" stop-opacity="0"/></linearGradient></defs><path class="chart-fill" d="M0 95 C40 76, 58 90, 95 67 S155 86, 190 59 S250 80, 292 48 S355 63, 420 26 L420 135 L0 135Z"/><path class="chart-line" d="M0 95 C40 76, 58 90, 95 67 S155 86, 190 59 S250 80, 292 48 S355 63, 420 26"/></svg>
-              <div class="chart-labels"><span>Oct 4</span><span>Oct 11</span><span>Oct 18</span><span>Today</span></div>
+            <div class="trend-demo" role="img" aria-label="Illustrative weight trend with sample readings that fluctuate modestly over time">
+              <div class="trend-top"><span><b>Weight trend</b><small>Recent readings</small></span><span class="sample-pill">SAMPLE DATA</span></div>
+              <div class="trend-values"><strong>172.4 <small>lb</small></strong><span>Latest reading</span></div>
+              <svg aria-hidden="true" viewBox="0 0 520 176" preserveAspectRatio="none">
+                <defs><linearGradient id="bar-primary" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e9ec8"/><stop offset="1" stop-color="#0bb9aa"/></linearGradient><linearGradient id="bar-latest" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#075dad"/><stop offset="1" stop-color="#078ab0"/></linearGradient></defs>
+                <path class="chart-grid" d="M16 30H504M16 78H504M16 126H504"/>
+                <path class="chart-average" d="M16 86H504"/>
+                <g class="trend-bars"><rect x="38" y="70" width="44" height="68" rx="14"/><rect x="116" y="64" width="44" height="74" rx="14"/><rect x="194" y="68" width="44" height="70" rx="14"/><rect x="272" y="58" width="44" height="80" rx="14"/><rect x="350" y="66" width="44" height="72" rx="14"/><rect class="latest-bar" x="428" y="62" width="44" height="76" rx="14"/></g>
+                <circle class="latest-dot" cx="450" cy="62" r="6"/>
+              </svg>
+              <div class="chart-labels"><span>Oct 4</span><span>Oct 8</span><span>Oct 12</span><span>Oct 16</span><span>Oct 20</span><span>Today</span></div>
             </div>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-stack">
             <span class="feature-number">02</span>
-            <div class="feature-symbol">✚</div>
-            <h3>Medications, your way</h3>
-            <p>Keep medication and supplement names, schedules, dose history, and inventory together. Offline suggestions speed up entry, and free text keeps you in control.</p>
+            <figure class="feature-illustration feature-photo medication-photo">
+              <img src="assets/myhealth-prescription-handoff.png" width="1536" height="1024" alt="Conceptual photo of a pharmacist handing an unbranded prescription bag to a customer">
+              <figcaption>Conceptual photo</figcaption>
+            </figure>
+            <div class="feature-card-copy"><h3>Medications, your way</h3><p>Use the app to keep medication and supplement names, schedules, dose history, and inventory together. Offline suggestions speed up entry, and free text keeps you in control.</p></div>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-stack">
             <span class="feature-number">03</span>
-            <div class="feature-symbol">◷</div>
-            <h3>Helpful local reminders</h3>
-            <p>Set reminders for the routines you choose. Notification delivery still depends on your device settings and operating system.</p>
+            <figure class="feature-illustration feature-photo reminder-photo">
+              <img src="assets/myhealth-reminder-watch.png" width="1536" height="1024" alt="Conceptual photo of a woman checking the time on her wristwatch at home">
+              <figcaption>Conceptual photo</figcaption>
+            </figure>
+            <div class="feature-card-copy"><h3>Helpful local reminders</h3><p>Set local reminders on your phone for the routines you choose. Notification delivery depends on your phone settings and operating system.</p></div>
           </article>
 
-          <article class="feature-card journal-card">
+          <article class="feature-card feature-stack">
             <span class="feature-number">04</span>
-            <div class="journal-visual" aria-hidden="true"><span>MON</span><strong>14</strong><i></i><i></i><i></i></div>
-            <div>
-              <h3>Your Health Journal</h3>
-              <p>Keep everyday context alongside the numbers so your health story is easier to review in one place.</p>
-            </div>
+            <figure class="feature-illustration feature-photo journal-photo">
+              <img src="assets/myhealth-paper-journal.png" width="1536" height="1024" alt="Conceptual photo of a man writing personal notes in a paper journal at home">
+              <figcaption>Conceptual photo</figcaption>
+            </figure>
+            <div class="feature-card-copy"><h3>Your Health Journal</h3><p>Capture everyday context in the app alongside the numbers so your health story is easier to review in one place.</p></div>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card feature-stack">
             <span class="feature-number">05</span>
-            <div class="feature-symbol">▤</div>
-            <h3>Reports you choose to share</h3>
-            <p>Create a focused summary when you need one. You decide when information leaves the app and where it goes.</p>
+            <figure class="feature-illustration feature-photo report-photo">
+              <img src="assets/myhealth-doctor-report.png" width="1536" height="1024" alt="Conceptual photo of a patient choosing to hand a blue folder to her doctor">
+              <figcaption>Conceptual photo</figcaption>
+            </figure>
+            <div class="feature-card-copy"><h3>Reports you choose to share</h3><p>Create a focused summary in the app when you need one. You choose when to share it and where it goes.</p></div>
           </article>
         </div>
       </div>
